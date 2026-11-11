@@ -5,6 +5,7 @@ where role='admin'
 select name,price
 from products
 where category='Electronics' and price<50
+order by price ASC
 
 select email,created_at
 from users 
@@ -35,7 +36,7 @@ limit 10;
 select name,price
 from products
 order by price desc 
-limit 4
-offset 6
+limit 5
+offset 5
 
 orders будет обращаться к users id так как id представляет собой уникальное множество чисел,тем самым можно избежать далнейшей путаницы
